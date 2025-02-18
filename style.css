@@ -3,5 +3,10 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #007bff, #00d4ff);
+    /*background: linear-gradient(to right, #007bff, #00d4ff);*/
+    background-color: black;
+}
+
+.johdanto {
+    min-height: 50vh;
 }
