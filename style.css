@@ -12,6 +12,11 @@ header {
     min-height: 50vh;
     z-index: 0;
     background-image: url("img/street.jpg");
+    background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .etusivu-napit {
@@ -19,6 +24,10 @@ header {
     min-height: 40vh;
     z-index: 0;
     background-image: url("img/theatre.jpg");
+    background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .johdanto .text-box {
