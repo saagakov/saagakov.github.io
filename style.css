@@ -8,5 +8,75 @@ header {
 }
 
 .johdanto {
+    position: relative;
     min-height: 50vh;
+    z-index: 0;
+    background-image: url("img/street.jpg");
+}
+
+.etusivu-napit {
+    position: relative;
+    min-height: 40vh;
+    z-index: 0;
+    background-image: url("img/theatre.jpg");
+}
+
+.johdanto .text-box {
+    position: relative; /* Tarvitaan, jotta ::before toimii */
+    padding: 20px; /* Lisää tilaa tekstin ympärille */
+    display: inline-block;
+    z-index: 2;
+}
+
+.johdanto .text-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fbdc6a; /* Vaalea laatikko */
+    z-index: -1; /* Varmistaa, että laatikko on tekstin takana */
+    border-radius: 10px; /* Pyöristetyt reunat */
+}
+
+.johdanto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Tummentaa taustaa */
+    z-index: -2;
+}
+
+.etusivu-napit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Tummentaa taustaa */
+    z-index: -1;
+}
+
+.btn {
+    background-color: #760504;
+    color:#fbdc6a; 
+    font-family: Verdana, sans-serif;
+}
+.btn:hover {
+    background-color: #4b0605;
+    color: #fbdc6a; /* Vaihda tekstin väri keltaiseksi hover-tilassa */
+}
+.kysely {
+    
+}
+
+footer {
+    padding-top: 30px; /* Lisää tilaa yläpuolelle */
+    padding-bottom: 30px; /* Lisää tilaa alapuolelle */
+    background-color: #fbdc6a;
 }
