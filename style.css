@@ -80,8 +80,41 @@ header {
     background-color: #4b0605;
     color: #fbdc6a; /* Vaihda tekstin väri keltaiseksi hover-tilassa */
 }
-.kysely {
-    
+
+.info {
+    position: relative;
+    min-height: 50vh;
+    z-index: 0;
+    background-color: #fbdc6a;
+}
+
+.sign {
+    position: relative;
+    min-height: 15vh;
+    z-index: 0;
+    background-image: url("img/ny-sign.jpg");
+    background-size: 110%;
+    background-position:1px 25%;
+    background-repeat: no-repeat;
+
+    display: flex;  
+    padding-left: 50px;
+    align-items: center; 
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: #fbdc6a;
+}
+
+.sign::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Tummentaa taustaa */
+    z-index: -1;
 }
 
 footer {
