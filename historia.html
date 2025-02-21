@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css"> <!-- Oma CSS -->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="upnav navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="img/star.png" alt="Logo" width="40" height="40" class="me-2">
@@ -20,9 +20,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Etusivu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tietoa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Yhteystiedot</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">Broadwayn historiaa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="esitys.html">Kuuluisimpia esityksiä</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tahti.html">Broadwayn tähtiä</a></li>
                 </ul>
             </div>
         </div>
@@ -61,52 +62,27 @@
                           Broadwaylle uuden sukupolven katsojia ja pitäneet sen elinvoimaisena kulttuurikohteena.</p>
                         
                     <p>Tänä päivänä Broadway ei ole vain teatterialue, vaan se on maailmanlaajuinen ilmiö, 
-                        joka yhdistää perinteet ja innovaation luoden unohtumattomia elämyksiä.</p> 
-
-                    </p>
+                        joka yhdistää perinteet ja innovaation luoden unohtumattomia elämyksiä.</p>         
                 </div>
             </div>
-
-            <div class="col-md-4 d-flex flex-column align-items-center gap-3">
-                <a href="index.html">
-                    <button class="btn btn-danger">Etusivulle</button>
-                </a>
-                <a href="esitys.html">
-                    <button class="btn btn-danger">Kuuluisimpia esityksiä</button>
-                </a>
-                <a href="tahti.html">
-                    <button class="btn btn-danger">Broadwayn tähtiä</button>
-                </a>
+            <div class="col-md-4 d-md-flex d-none justify-content-end align-items-start">
+                <nav class="napit navbar">
+                    <div class="container d-flex flex-column align-items-center gap-3">
+                        <a href="index.html">
+                            <button class="btn btn-danger">Etusivulle</button>
+                        </a>
+                        <a href="esitys.html">
+                            <button class="btn btn-danger">Kuuluisimpia esityksiä</button>
+                        </a>
+                        <a href="tahti.html">
+                            <button class="btn btn-danger">Broadwayn tähtiä</button>
+                        </a>
+                    </div>
+                </nav>
             </div>
         </div>
     </section>
 
-    <div class="container mt-5">
-        <ul class="nav nav-tabs" id="broadwayTabs">
-            <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#historia">Historia</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#esitykset">Esitykset</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tahdet">Tähdet</a>
-            </li>
-        </ul>
-    
-        <div class="tab-content mt-3">
-            <div id="historia" class="tab-pane fade show active">
-                <p>Broadwayn historia alkaa jo 1700-luvulla...</p>
-            </div>
-            <div id="esitykset" class="tab-pane fade">
-                <p>Tässä ovat Broadwayn kuuluisimmat esitykset...</p>
-            </div>
-            <div id="tahdet" class="tab-pane fade">
-                <p>Broadwayn tunnetuimmat tähdet ovat...</p>
-            </div>
-        </div>
-    </div>
-    
     <button onclick="scrollToTop()" class="btn btn-primary position-fixed bottom-0 end-0 m-3">
         ⬆ Takaisin ylös
     </button>
@@ -118,7 +94,7 @@
     </script>
     
 
-    <footer class="text-black text-center py-3">
+    <footer class="text-center py-3">
         <h5>Ota meihin yhteyttä!</h5>
         <p>&copy; 2025 Oma Nettisivu</p>
         <p>&copy; 2025 Oma Nettisivu</p>

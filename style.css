@@ -1,10 +1,22 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #fbdc6a;
 }
 
 header {
     /*background: linear-gradient(to right, #007bff, #00d4ff);*/
     background-color: black;
+}
+
+.upnav {
+    background-color: black;
+}
+.navbar-nav .nav-link {
+    color: white !important; /* Vaihda haluamaasi väriin */
+}
+.navbar-brand {
+    color: #fbdc6a !important; /* Vaihda haluamasi väri */
+    font-weight: bold; /* Lisää lihavointi, jos haluat */
 }
 
 .johdanto {
@@ -79,6 +91,20 @@ header {
 .btn:hover {
     background-color: #4b0605;
     color: #fbdc6a; /* Vaihda tekstin väri keltaiseksi hover-tilassa */
+} 
+.etusivu-napit .etu {
+    font-size: 1.5rem; /* Suurentaa tekstin kokoa */
+    padding: 15px 30px; /* Lisää sisätilaa napin ympärille */
+    border-radius: 10px; /* Pyöristää kulmia */
+    border: none; /* Poistaa reunuksen */
+}
+
+.kysely {
+    font-size: 1.2rem; /* Suurentaa tekstin kokoa */
+    border-radius: 10px; /* Pyöristää kulmia */
+    border: none; /* Poistaa reunuksen */
+    padding: 15px 10px; /* Lisää sisätilaa napin ympärille */
+    max-width: 300px;
 }
 
 .info {
@@ -117,8 +143,28 @@ header {
     z-index: -1;
 }
 
+.shows {
+    background-color:  #fbdc6a; /* Tummentaa taustaa */
+    max-width: 800px;
+    margin-left: 0;
+}
+
+.nav .nav-link{
+    color: black;
+}
+.nav{
+    border-bottom: 2px solid black; /* Muuttaa kaikkien tabien alapuolella olevan viivan värin */
+}
+.nav .nav-link.active {
+    background-color: #746120 !important; /* Punainen tausta */
+    color: white !important; /* Valkoinen teksti */
+    font-weight: bold;
+    border-color:  #746120;
+} 
 footer {
     padding-top: 30px; /* Lisää tilaa yläpuolelle */
     padding-bottom: 30px; /* Lisää tilaa alapuolelle */
-    background-color: #fbdc6a;
+    background-color: black;
+    color: #fbdc6a;
+    font-weight: bold;
 }

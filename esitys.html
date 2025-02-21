@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css"> <!-- Oma CSS -->
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="upnav navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="img/star.png" alt="Logo" width="40" height="40" class="me-2">
@@ -20,55 +20,149 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Etusivu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tietoa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Yhteystiedot</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html">Broadwayn historiaa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="esitys.html">Kuuluisimpia esityksiä</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tahti.html">Broadwayn tähtiä</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="sign text-white text-left py- ">
-        <p>BROADWAYN HISTORIAA</p>
+    <header class="sign text-left py- ">
+        <p>BROADWAYN KUULUISIMPIA ESITYKSIÄ</p>
     </header>
 
-    <section class="johdanto container-fluid bg-primary py-5 my-0">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Otsikko</h2>
-                <p>Tämä on esimerkkitekstiä. Tässä voit kertoa lisää projektistasi.</p>
+    
+    <section class="info container-fluid d-flex align-items-center py-4 my-0">
+        <div class="row w-100 h-100 d-flex mx-0 px-0">
+            <div class="col-md-8 d-flex justify-content-center">
+                <div class="text-box mb-3">
+                    <p>paljon paljon tekstiä</p>
+                    <p>Broadway on tuottanut lukemattomia unohtumattomia musikaaleja, jotka ovat jättäneet pysyvän 
+                        jäljen teatterihistoriaan ja vaikuttaneet koko viihdemaailmaan. Osa näistä esityksistä on 
+                        mullistanut musiikkiteatterin ilmaisutapoja, toiset taas ovat lumonneet yleisön sukupolvesta 
+                        toiseen ajattomilla tarinoillaan ja unohtumattomilla sävelmillään. Klassikot kuten 
+                        The Phantom of the Opera, West Side Story ja Les Misérables ovat määritelleet Broadwayn 
+                        suurmusikaalien standardit, kun taas modernit menestykset, kuten Wicked, Hamilton ja The Lion King,
+                         ovat tuoneet musikaalitaiteeseen uudenlaista energiaa ja innovaatioita. Näiden tuotantojen vaikutus 
+                         ulottuu lavan ulkopuolelle – ne ovat inspiroineet elokuvia, populaarimusiikkia ja uutta 
+                         sukupolvea teatteritaiteilijoita. Tässä osiossa sukellamme Broadwayn merkittävimpien musikaalien 
+                         maailmaan ja tutkimme, mikä tekee niistä niin ainutlaatuisia. </p> 
+
+                    <p>Rahallisesti tuottavimmat Broadway musikaalit ovat seuraavat: The Lion King, Wicked, 
+                        The Phantom of the Opera ja Hamilton. Näillä jokaisella on yli 
+                        1 miljardin dollarin arvoiset Broadway-tuotot. </p>        
+                    <p>Broadway on kuitenkin täynnä monia klassikoita, jotka ovat lumonneet yleisön sukupolvesta toiseen. 
+                        Niitä on muun muassa Chicago, Rent, Sweeney Todd ja Mamma Mia! Aivan mahtavia tuotantoja on kuitenkin monia, 
+                        enkä pysty niitä kaikkia tähän kappaleeseen luettelemaa. Monet Broadwayn suurimmat menestykset ovat 
+                        tehneet tiensä myös elokuviksi, tuoden musikaalien taian laajemman yleisön nähtäville. 
+                        Jo varhain Hollywood alkoi sovittaa Broadway-esityksiä elokuvamuotoon, 
+                         vuosikymmenten aikana tästä on tullut tärkeä osa musikaalien elinkaarta. 
+                         Klassikot kuten West Side Story (1961 ja 2021), The Sound of Music (1965) ja Grease (1978) 
+                         valloittivat sekä Broadwayn että elokuvateatterit, samalla kun niiden ikoniset kappaleet 
+                         jäivät elämään populaarikulttuurissa. Ehkä uusimpana ja suosituimpana Broadway-elokuvana on Wicked, 
+                         joka sai ensi-iltansa vuonna 2024. </p>        
+                </div>
             </div>
-            <div class="col-md-6 d-flex justify-content-center">
-                <button class="bg-danger btn btn-primary">
-                    Kerro meille mitä kaikkia Broadway musikaaleja tunnet!</button>
+            <div class="col-md-4 d-md-flex d-none justify-content-end align-items-start">
+                <nav class="navbar">
+                    <div class="container d-flex flex-column align-items-center gap-3">
+                        <a href="index.html">
+                            <button class="btn btn-danger">Etusivulle</button>
+                        </a>
+                        <a href="esitys.html">
+                            <button class="btn btn-danger">Kuuluisimpia esityksiä</button>
+                        </a>
+                        <a href="tahti.html">
+                            <button class="btn btn-danger">Broadwayn tähtiä</button>
+                        </a>
+                    </div>
+                </nav>
             </div>
         </div>
     </section>
 
-    <section class="johdanto container-fluid py-5 my-0">
-        <div class="row h-100 bg-danger">
-            <div class="col-md-4 d-flex align-items-center justify-content-center">
-                <a href="historia.html">
-                    <button class="bg-danger btn btn-primary">
-                        Broadwayn historiaa</button>
-                </a>
+    <div class="shows container-fluid mt-2">
+        <ul class="nav nav-tabs" id="broadwayTabs">
+            <li class="nav-item ">
+                <a class="nav-link active" data-bs-toggle="tab" href="#lionking">The Lion King (1997) </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#wicked">Wicked (2003) </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#phantom">The Phantom of the Opera (1988)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#hamilton">Hamilton (2015)</a>
+            </li>
+        </ul>
+    
+        <div class="tab-content mt-3">
+            <div id="lionking" class="tab-pane fade show active">
+                <p>The Lion King on yksi Broadwayn kaikkien aikojen menestyneimmistä musikaaleista. 
+                    Vuonna 1997 ensi-iltansa saanut esitys perustuu Disney-elokuvaan Leijonakuningas (1994), 
+                    mutta tuo tarinan henkiin upealla lavastuksella, ainutlaatuisilla puvustuksilla ja vaikuttavilla 
+                    musiikkinumeroilla. Musikaalin ohjaaja ja lavastaja Julie Taymor yhdisti afrikkalaisia perinteitä, 
+                    nukke- ja varjoteatteria sekä visuaalisesti upeita elementtejä luodakseen unohtumattoman näyttämökokemuksen. 
+                    Elton Johnin ja Tim Ricen säveltämät laulut, kuten Circle of Life, Can You Feel the Love Tonight ja Hakuna Matata, 
+                    ovat tehneet esityksestä maailmanlaajuisen ilmiön. The Lion King on rikkonut Broadwayn myyntiennätyksiä, ja sen 
+                    tuotot ovat ylittäneet kaksi miljardia dollaria, mikä tekee siitä yhden kaikkien aikojen menestyneimmistä 
+                    teatteriesityksistä. </p>
             </div>
-            <div class="col-md-4 d-flex justify-content-center">
-                <a href="esitys.html">
-                    <button class="bg-danger btn btn-primary">
-                        Kuuluisimpia esityksiä</button>
-                </a>
+            <div id="wicked" class="tab-pane fade">
+                <p>Wicked on yksi 2000-luvun suosituimmista ja vaikutusvaltaisimmista Broadway-musikaaleista. 
+                    Vuonna 2003 ensi-iltansa saanut esitys kertoo uudelleen Ozin velho -tarinan keskittyen kahden noidan, 
+                    Elphaban ja Glindan, ystävyyteen ja kohtaloihin. Musikaali tarjoaa uuden näkökulman tunnettuihin hahmoihin, 
+                    paljastaen, kuinka "Paha noita" Elphaba ei välttämättä olekaan niin paha kuin legendat väittävät. 
+                    Stephen Schwartzin säveltämä ja käsikirjoittama Wicked on täynnä upeita musiikkinumeroita, 
+                    joista tunnetuimpia ovat voimakas balladi Defying Gravity, koskettava For Good ja kepeä Popular. 
+                    Vahvan tarinansa, vaikuttavan lavastuksensa ja ikonisten roolisuoritustensa ansiosta Wicked on 
+                    kerännyt miljoonia katsojia ympäri maailmaa ja vakiinnuttanut paikkansa Broadwayn klassikoiden joukossa. </p>
             </div>
-            <div class="col-md-4 d-flex justify-content-center">
-                <a href="tahti.html">
-                    <button class="bg-danger btn btn-primary">
-                        Broadwayn tähtiä</button>
-                </a>
+            <div id="phantom" class="tab-pane fade">
+                <p>The Phantom of the Opera on yksi kaikkien aikojen ikonisimmista ja menestyneimmistä Broadway-musikaaleista. 
+                    Andrew Lloyd Webberin säveltämä ja vuonna 1986 ensi-iltansa saanut musikaali kertoo salaperäisestä, 
+                    naamioidusta oopperan kummituksesta, joka rakastuu nuoreen sopraanoon, Christineen, 
+                    Pariisin oopperatalon varjoissa. Musikaali tunnetaan upeasta orkestroinnistaan, vaikuttavista 
+                    lavasteistaan sekä unohtumattomista kappaleistaan, kuten The Music of the Night, 
+                    Think of Me ja mahtipontinen nimikkokappale The Phantom of the Opera. 
+                    Musikaali avasi Broadwaylla vuonna 1988 ja siitä tuli historian pisimpään esitetty show, 
+                    pyörien huikeat 35 vuotta ennen viimeistä esitystään vuonna 2023. Miljoonia katsojia lumonnut 
+                    Phantom on jättänyt pysyvän jäljen teatterimaailmaan ja säilyy edelleen yhtenä Broadwayn 
+                    rakastetuimmista musikaaleista. </p>
             </div>
-        </div>
-    </section>
+            <div id="hamilton" class="tab-pane fade">
+                <p>Hamilton on yksi 2000-luvun merkittävimmistä ja innovatiivisimmista Broadway-musikaaleista. 
+                    Lin-Manuel Mirandan luoma ja säveltämä esitys sai ensi-iltansa vuonna 2015 ja nousi nopeasti 
+                    kulttuuriseksi ilmiöksi. Musikaali kertoo Yhdysvaltain perustajaisiin kuuluneen Alexander Hamiltonin 
+                    elämäntarinan yhdistäen historiallisen draaman moderniin hip-hop-, R&B- ja pop-musiikkiin. 
+                    Hamilton tunnetaan vauhdikkaasta rytmistään, monimuotoisesta näyttelijäkaartistaan ja uraauurtavasta 
+                    tarinankerronnastaan. Ikoniset kappaleet, kuten My Shot, The Room Where It Happens ja Satisfied, 
+                    ovat tehneet musikaalista suositun niin teatterin ystävien kuin uuden yleisön keskuudessa. 
+                    Lukuisia Tony-palkintoja voittanut Hamilton ei ole pelkästään viihdyttävä, vaan myös opetuksellinen teos, 
+                    joka tuo historian eloon ennennäkemättömällä tavalla.</p>
+                
+            </div>
 
-    <footer class="bg-dark text-white text-center py-3">
+        </div>
+    </div>
+    
+    <button onclick="scrollToTop()" class="btn btn-primary position-fixed bottom-0 end-0 m-3">
+        ⬆ Takaisin ylös
+    </button>
+    
+    <script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    </script>
+    
+
+    <footer class="text-center py-3">
+        <h5>Ota meihin yhteyttä!</h5>
+        <p>&copy; 2025 Oma Nettisivu</p>
         <p>&copy; 2025 Oma Nettisivu</p>
     </footer>
 
