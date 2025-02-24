@@ -19,6 +19,12 @@ header {
     font-weight: bold; /* Lisää lihavointi, jos haluat */
 }
 
+.etutext {
+    font-size: x-large;
+    font-weight: bold;
+    color: #fbdc6a;
+}
+
 .johdanto {
     position: relative;
     min-height: 50vh;
@@ -148,6 +154,22 @@ header {
     max-width: 800px;
     margin-left: 0;
 }
+
+.tab-content {
+    background-color:  whitesmoke;
+    padding: 15px 15px;
+    margin-bottom: 15px
+}
+
+.infotahti {
+    position: relative;
+    min-height: 5vh;
+    height: auto;
+    z-index: 0;
+    background-color: #fbdc6a;
+}
+
+
 
 .nav .nav-link{
     color: black;
