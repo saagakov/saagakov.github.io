@@ -113,6 +113,13 @@ header {
     max-width: 300px;
 }
 
+.laheta{
+    font-size: 1.2rem; /* Suurentaa tekstin kokoa */
+    border-radius: 10px; /* Pyöristää kulmia */
+    border: none; /* Poistaa reunuksen */
+    max-width: 300px;
+}
+
 .info {
     position: relative;
     min-height: 50vh;

@@ -35,8 +35,8 @@
 
 
     <section class="container mt-5">
-        <div class="row justify-content-start"> <!-- Tämä pitää lomakkeen vasemmalla -->
-            <div class="col-md-8">
+        <div class="row"> <!-- Tämä pitää lomakkeen vasemmalla -->
+            <div class="col-md-8 justify-content-start">
                 <h2 class="text-center mb-4">Broadway-kysely</h2>
                 <form>
                     <!-- Nimi -->
@@ -52,7 +52,7 @@
                     </div>
     
                     <!-- Monivalintakysymys -->
-                    <div class="mb-3">
+                <!--    <div class="mb-3">
                         <label class="form-label">Mikä on suosikkimusikaalisi?</label>
                         <select class="form-select">
                             <option selected>Valitse...</option>
@@ -61,7 +61,7 @@
                             <option value="3">Hamilton</option>
                             <option value="4">Muu</option>
                         </select>
-                    </div>
+                    </div> -->
     
                     <!-- Radiopainikkeet -->
                     <div class="mb-3">
@@ -75,10 +75,28 @@
                             <label class="form-check-label" for="broadwayNo">Ei</label>
                         </div>
                     </div>
+
+                    <!-- lempi musikaali -->
+                    <div class="mb-3">
+                        <label for="feedback" class="form-label">Mikä on lempi Broadway-musikaalisi?</label>
+                        <textarea class="form-control" id="feedback" rows="4" placeholder="Kirjoita kommenttisi tähän..."></textarea>
+                    </div>
+
+                    <!-- Avoin tekstikenttä -->
+                    <div class="mb-3">
+                        <label for="feedback" class="form-label">Miksi suosittelisit tätä musikaalia muille?</label>
+                        <textarea class="form-control" id="feedback" rows="4" placeholder="Kirjoita kommenttisi tähän..."></textarea>
+                    </div>
+
+                    <!-- Avoin tekstikenttä -->
+                    <div class="mb-3">
+                        <label for="feedback" class="form-label">Minkä/mitkä musikaalit haluaisit päästä näkemään Broadwaylla?</label>
+                        <textarea class="form-control" id="feedback" rows="4" placeholder="Kirjoita kommenttisi tähän..."></textarea>
+                    </div>
     
                     <!-- Monivalintaruudut -->
                     <div class="mb-3">
-                        <label class="form-label">Mitkä Broadway-musikaalit tunnet?</label>
+                        <label class="form-label">Mitkä seuraavista Broadway-musikaalit tunnet?</label>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="musical1">
                             <label class="form-check-label" for="musical1">The Lion King</label>
@@ -91,6 +109,34 @@
                             <input class="form-check-input" type="checkbox" id="musical3">
                             <label class="form-check-label" for="musical3">Chicago</label>
                         </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="musical4">
+                            <label class="form-check-label" for="musical4">Les Miserables</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="musical5">
+                            <label class="form-check-label" for="musical5">Hamilton</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="musical6">
+                            <label class="form-check-label" for="musical6">The Phantom of the Opera</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="musical7">
+                            <label class="form-check-label" for="musical7">West Side Story</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="musical8">
+                            <label class="form-check-label" for="musical8">Rent</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="musical9">
+                            <label class="form-check-label" for="musical9">Hadestown</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="musical10">
+                            <label class="form-check-label" for="musical10">Hairspray</label>
+                        </div>
                     </div>
     
                     <!-- Avoin tekstikenttä -->
@@ -100,14 +146,17 @@
                     </div>
     
                     <!-- Lähetä-painike -->
-                    <button type="submit" class="btn btn-primary w-100">Lähetä vastaukset</button>
+                    <button type="submit" class="laheta btn btn-primary w-100 mb-4 mx-auto d-block">Lähetä vastaukset</button>
                 </form>
             </div>
-            <div class="col-md-4 d-md-flex d-none justify-content-end align-items-start">
+            <div class="col-md-4 d-md-flex d-none jc align-items-start justify-content-center gap-3">
                 <nav class="napit navbar">
                     <div class="container d-flex flex-column align-items-center gap-3">
                         <a href="index.html">
                             <button class="btn btn-danger">Etusivulle</button>
+                        </a>
+                        <a href="historia.html">
+                            <button class="btn btn-danger">Broadwayn historiaa</button>
                         </a>
                         <a href="esitys.html">
                             <button class="btn btn-danger">Kuuluisimpia esityksiä</button>
