@@ -37,17 +37,6 @@ header {
 
 }
 
-.etusivu-napit {
-    position: relative;
-    min-height: 40vh;
-    z-index: 0;
-    background-image: url("img/theatre.jpg");
-    background-size: cover;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .johdanto .text-box {
     position: relative; /* Tarvitaan, jotta ::before toimii */
     padding: 20px; /* Lisää tilaa tekstin ympärille */
@@ -76,6 +65,17 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Tummentaa taustaa */
     z-index: -2;
+}
+
+.etusivu-napit {
+    position: relative;
+    min-height: 60vh;
+    z-index: 0;
+    background-image: url("img/theatre.jpg");
+    background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeaSTOPt;
 }
 
 .etusivu-napit::before {
@@ -111,6 +111,13 @@ header {
     border: none; /* Poistaa reunuksen */
     padding: 15px 10px; /* Lisää sisätilaa napin ympärille */
     max-width: 300px;
+}
+
+.text-center {
+    font-size: 1.1rem;
+    font-style: bold;
+    
+
 }
 
 .laheta{
