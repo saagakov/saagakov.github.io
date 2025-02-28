@@ -1,6 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #fbdc6a;
+    display: flex;
+    flex-direction: column;
+}
+
+.htmlHI, .bodyHI {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Työntää footerin alas */
 }
 
 header {
@@ -132,11 +144,12 @@ header {
     min-height: 50vh;
     z-index: 0;
     background-color: #fbdc6a;
+    margin-bottom: 100px;
 }
 
 .sign {
     position: relative;
-    min-height: 15vh;
+    min-height: 18vh;
     z-index: 0;
     background-image: url("img/ny-sign.jpg");
     background-size: 110%;
@@ -198,8 +211,8 @@ header {
     border-color:  #746120;
 } 
 footer {
-    padding-top: 30px; /* Lisää tilaa yläpuolelle */
-    padding-bottom: 30px; /* Lisää tilaa alapuolelle */
+    padding-top: 20px; /* Lisää tilaa yläpuolelle */
+    padding-bottom: 20px; /* Lisää tilaa alapuolelle */
     background-color: black;
     color: #fbdc6a;
     font-weight: bold;
